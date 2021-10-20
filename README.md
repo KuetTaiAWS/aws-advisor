@@ -23,7 +23,7 @@ if(sudo yum list installed | grep php-mbstring > /dev/null) then echo 'php-mbstr
 if(sudo yum list installed | grep php-xml > /dev/null) then echo 'php-xml installed, skipped'; else sudo yum install php-xml -y; fi
 ## remove existing old version of advisor
 rm -rf aws-advisor
-git clone https://github.com/cykhoo0108/aws-advisor.git
+git clone https://github.com/KuetTaiAWS/aws-advisor.git
 ```
 
 ![Install dependencies](./images/p2-dependencies.gif)
@@ -66,18 +66,6 @@ You can navigate to the service(s) listed to see detailed findings on each servi
 
 ## Contributing to aws-advisor
 We encourage public contributions! Please review [CONTRIBUTING](./CONTRIBUTING.md) for details on our code of conduct and development process.
-
-## Contributors
-Thanks to the following people who have contributed to this project:
-* [@kuettai](https://github.com/kuettai)
-* [@sarika](https://github.com/sarika-subram)
-* [@cykhoo](https://github.com/cykhoo0108)
-
-## Contact
-You can reach us at linkedIn:
-* [KuetTai](https://www.linkedin.com/in/kuettai-yong-171b1068/)
-* [Sarika](https://www.linkedin.com/in/sarika-subramaniam-9ba591118/)
-* [ChunYong](https://www.linkedin.com/in/cykhoo/)
 
 ## License
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](./LICENSE)

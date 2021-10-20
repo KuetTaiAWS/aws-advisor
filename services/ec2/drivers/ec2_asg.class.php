@@ -69,6 +69,9 @@ class ec2_asg extends evaluator{
     function __checkClassicLBAssociation(){
         $asg = $this->asg;
         $lbNames = $asg['LoadBalancerNames'];
+        if(empty($lb['LoadBalancerName'])){
+            return;
+        }
         
         ## API filter not working
         $result = $this->elbClassicClient->describeLoadBalancers();

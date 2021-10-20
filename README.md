@@ -1,12 +1,16 @@
 # aws-advisor
 
+This is an unofficial guidance tool for the AWS environment.
+
+## Overview
 AWS Advisor is a tool that allows AWS customers to automate checks on their environment and services based on the [AWS Well Architected Framework](https://aws.amazon.com/architecture/well-architected/). The purpose of this tool is to provide recommendations on how to improve upon existing setup and configuration. This is not intended to be a replacement of the [AWS Well Architected Tool](https://aws.amazon.com/well-architected-tool/) but rather a complement to it. 
 
 ## Prerequisites
-1. You must have an existing AWS Account.
-2. You must have an IAM user with sufficient read permissions for all of the services to be reviewed. See example [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_iam_read-only-console.html). The user must also have full access to AWS CloudShell i.e. AWSCloudShellFullAccess. 
-3. [Login to your AWS account](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#start-session) using the above IAM user. 
-4. Launch your [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#launch-region-shell) - use may use any region
+1. Please review the [DISCLAIMER](./DISCLAIMER.md) before proceeding. 
+2. You must have an existing AWS Account.
+3. You must have an IAM user with sufficient read permissions for all of the services to be reviewed. See example [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_iam_read-only-console.html). The user must also have full access to AWS CloudShell i.e. AWSCloudShellFullAccess. 
+4. [Login to your AWS account](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#start-session) using the above IAM user. 
+5. Launch your [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#launch-region-shell) - use may use any region
 
 ![Launch CloudShell](./images/p1-cloudshell.gif)
 
@@ -32,7 +36,7 @@ alias advisor='php $(pwd)/advise.php'
 ```
 
 When running advisor, you can specify the regions you want it to run on, as well as the service(s) you want. Currently, you can choose to run it on EC2, RDS, IAM and S3. 
-For example, to run checks on S3 service in the Singapore region:
+See below for examples:
 ```bash
 ## Singapore region only, and S3 service only
 advisor --region ap-southeast-1 --services s3

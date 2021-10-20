@@ -1,7 +1,7 @@
 # Contributing to AWS Advisor
 
 Thank you for your interest in contributing to AWS Advisor. We greatly value feedback and contributions whether it's a new feature, correction, or additional documentation. Please submit your 
-[issues](https://github.com/cykhoo0108/aws-advisor/issues) or [pull requests](https://github.com/cykhoo0108/aws-advisor/pulls) through GitHub.
+[issues](https://github.com/cykhoo0108/aws-advisor/issues) or [pull requests](https://github.com/cykhoo0108/aws-advisor/pulls) through GitHub. Please review the [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md) before making any contribution. 
 
 Jump To:
 
@@ -9,7 +9,7 @@ Jump To:
 * [Feature Requests](#Feature-Requests)
 * [Code Contributions](#Code-Contributions)
 
-## How to contribute
+## How to contribute<a name="How_to_Contribute"></a>
 
 *Before you send us a pull request, please be sure that:*
 
@@ -73,8 +73,8 @@ Open an [issue](https://github.com/cykhoo0108/aws-advisor/issues) with the follo
 
 ## Code Contributions<a name="##Code-Contributions"></a>
 
-Code contributions are done through [Pull Requests](https://github.com/cykhoo0108/aws-advisor/pulls). The list below are guidelines to use when submitting pull requests. These are the 
-same set of guidelines that the core contributors use when submitting changes, and we ask the same of all community contributions as well:
+Code contributions are done through [Pull Requests](https://github.com/cykhoo0108/aws-advisor/pulls). The list below are guidelines to use when submitting pull requests. These are the same set of guidelines that the core contributors use when submitting changes, and we ask the same of all community contributions as well:
 
 1. AWS Advisor is released under the [MIT License](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square). Any code you submit
    will be released under that license. 
+2. Please review the [guidelines](#How_to_Contribute) before submitting a pull request. 

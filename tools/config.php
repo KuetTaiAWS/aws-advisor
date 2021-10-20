@@ -52,7 +52,7 @@ class Config{
         ],
         "feedback" => [
             "required" => false,
-            "default" => true
+            "default" => false
         ],
         "test" => [
             "required" => false,

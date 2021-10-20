@@ -79,7 +79,7 @@
     },
     "BucketLifecycle": {
         "category": "CO",
-        "^description": "You have not configured lifecycle policies. Lifecycle configuration is a set of rules that define actions that Amazon S3 applies to a group of objects. This will save you cost by moving infrequently accessed objects to lower cost storage tiers and expiring objects that are no longer needed.",
+        "^description": "You have not configured lifecycle policies for objects in {$COUNT} buckets. Lifecycle configuration is a set of rules that define actions that Amazon S3 applies to a group of objects. This will save you cost by moving infrequently accessed objects to lower cost storage tiers and expiring objects that are no longer needed.",
         "shortDesc": "Configure Lifecycle Policies",
         "criticality": "M",
         "downtime": 0,
@@ -105,7 +105,7 @@
     },
     "ObjectsInIntelligentTier": {
         "category": "CO",
-        "^description": "Your objects are not in S3 Intelligent Tier. The S3 Intelligent-Tiering storage class is designed to optimize storage costs by automatically moving data to the most cost-effective access tier when access patterns change. For a small monthly object monitoring and automation charge, S3 Intelligent-Tiering monitors access patterns and automatically moves objects that have not been accessed to lower-cost access tiers. Unless all your objects are very frequently accessed, or the data lifecycle is very clearly known and defined, it is considered best practice to store your objects in Intelligent Tier.",
+        "^description": "Your objects in {$COUNT} S3 buckets are not in S3 Intelligent Tier. The S3 Intelligent-Tiering storage class is designed to optimize storage costs by automatically moving data to the most cost-effective access tier when access patterns change. For a small monthly object monitoring and automation charge, S3 Intelligent-Tiering monitors access patterns and automatically moves objects that have not been accessed to lower-cost access tiers. Unless all your objects are very frequently accessed, or the data lifecycle is very clearly known and defined, it is considered best practice to store your objects in Intelligent Tier.",
         "shortDesc": "Enable Intelligent Tiering",
         "criticality": "L",
         "downtime": 0,
